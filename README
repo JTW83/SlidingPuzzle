@@ -1,0 +1,13 @@
+run.rb
+	Uses the SlidingPuzzle class to create multiple puzzles and outputs if they are solvable.
+
+lib/sliding_puzzle.rb
+	Contains the SlidingPuzzle class and its methods.
+
+spec/sliding_puzzle_spec.rb
+	Contains some rspec tests for the SlidingPuzzle class.
+
+Notes:
+The solution to the given Problem is counting the inversions. Since the empty square in the task is assumed to always be in the bottom right corner, one doesn't need to factor in the width and height of the board. If the inversion count is even, the puzzle is solvable.
+
+The calculation for the number of inversions runs in O(n^2) and could be optimized to run in O(n*log(n)) by using Merge-Sort.
